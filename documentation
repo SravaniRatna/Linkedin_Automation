@@ -1,0 +1,23 @@
+Project:
+Extract open to work people data from Linkedin
+
+Tools Used:
+1) Selenium as a webdriver
+2) Beautifulsoup as a web extractor
+3) Pandas module to create csv file
+4) Time module to sleep
+5) Datetime module to print date and time along with the file name while saving
+
+Documentation:
+1) Download the webdriver which is suitable for chrome version.
+2) Connect chrome to the webdriver
+3) Get the html page from https://www.linkedin.com
+4) Give credentials like mail id and password to sign in.
+5) Linkedin page is opened and now search for the keywords. #keywords like: jobseeker.people
+6) From that people page click see all results
+7) Collect the urls in that page.
+8) Open the each url and retrive the necessary information like name, about, etc.
+9) In the same way url's from remaining pages to be collected using next button and data to be extracted.
+10) All the collected info is then sent to excel using pandas and make sure that no duplicates.
+
+
